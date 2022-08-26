@@ -12,11 +12,9 @@
 
 ```
 require gitlab.com/yunnysunny/mod-test v0.0.3
-
-replace gitlab.com/yunnysunny/mod-test v0.0.3 => gitlab.com/yunnysunny/mod-test.git v0.0.3
 ```
 
-这里拿引用 [mod-test](https://gitlab.com/yunnysunny/mod-test) 这个项目举例，注意要添加 replace 操作，否则无法正确下载，这是由于公司运维在配置 gitlab 的时候，内部返回的链接中都带有 10080 端口号导致的。
+这里拿引用 [mod-test](https://gitlab.com/yunnysunny/mod-test) 这个项目举例。
 
 > 如果使用这种 ssh 模式在本地进行开发的话，可以参见项目 [use-mod](http://gitlab.com/yunnysunny/use-mod) 的说明。
 
