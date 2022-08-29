@@ -6,17 +6,9 @@
 
 ## 1 使用方法
 
-### 1.1 go.mod 配置
+### 1.1 私有包配置
 
-本镜像目前只支持通过 git 的 ssh 模式下载私有包。对于开发者来说，如果想引用私有包，需要在 go.mod 中有如下配置
-
-```
-require gitlab.com/yunnysunny/mod-test v0.0.3
-```
-
-这里拿引用 [mod-test](https://gitlab.com/yunnysunny/mod-test) 这个项目举例。
-
-> 如果使用这种 ssh 模式在本地进行开发的话，可以参见项目 [use-mod](http://gitlab.com/yunnysunny/use-mod) 的说明。
+本镜像目前只支持通过 gitlib.com 下的私有包。对于开发者来说，如果想引用其他仓库私有包，需要修改 Dockerfile 中的 GOPRIVATE 环境变量。关于私有包配置的其他问题，可以参阅我的博文 [go 私有化包构建路](https://blog.whyun.com/posts/go-private-package/) 。
 
 ### 1.2 dockerfile 编写
 
